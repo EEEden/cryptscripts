@@ -1,9 +1,10 @@
 #Caesar cipher
+#Author: Eden
 from string import maketrans, translate, lowercase
 import sys
 
 if len(sys.argv) != 3:
-    print "Usage: caesar.py plaintext placestoshift"
+    print "Usage: " + sys.argv[0] + " plaintext placestoshift"
     exit(1)
 isLower = sys.argv[1][0].islower() #if the output is piped the it stays in the correct case
 plaintext = sys.argv[1].lower()
